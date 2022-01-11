@@ -7,17 +7,16 @@
 }
 
 .navbar {
-    padding: 0;
-    background-color: #4C8C00;
+    padding: 0
 }
 
 .logo {
-    padding: 10px;
-    background: #41024D
+    background: #41024D;
+    font-size: 1.8rem
 }
 
 .container-fluid, .container {
-    margin-top: 0;
+    margin-top: 0
 }
 
 @media (min-width: 768px) {
@@ -48,7 +47,8 @@
     }
 
     .navbar {
-        padding-top: 0
+        padding-top: 0;
+        background-color: #4C8C00
     }
 
     .navbar-brand {
@@ -56,7 +56,7 @@
     }
     
     .logo {
-        font-size: 3rem;
+        font-size: 3rem
     }
 }
 
@@ -77,8 +77,15 @@
         left: 100%
     }
 
+    .navbar {
+        background-color: #4C8C00
+    }
+
     .navbar-brand {
         width: 100%
+    }
+    .logo {
+        font-size: 3rem
     }
 }
 
