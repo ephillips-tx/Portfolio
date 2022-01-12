@@ -17,9 +17,9 @@
 </head>
 
 <body>
-    <div class="row row-cols-md-2">
+    <div class="row row-cols-md-2 minHeight">
         <!-- Side navigation -->
-        <nav class="navbar navbar-expand-md navbar-light w-100 ">
+        <nav class="navbar navbar-expand-md navbar-light w-100">
             <a class="navbar-brand" href="#"></a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
             aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,19 +42,35 @@
             </div>
         </nav>
 
-        <div class="col-12 col-md-6 text-center">
-            <img src="img/me.png" class="img-fluid rounded-circle smallImg" alt="Picture of Eric Phillips">
-        </div>
-        <!--Main Content Column -->
-        <div class="col-12 col-md-6 d-flex justify-content-center text-center pt-4">
-            <div class="p-5">
-                <p class="intro">Howdy! My name is</p>
-                <h1><span style="color: #9932cc;">Eric</span> Phillips</h1>
-                <p class="shortDescription">
-                    A Front-End Web Developer dedicated to beauty through efficiency.
-                </p>
+            <div class="col-12 col-md-6 px-5 d-flex justify-content-center" id="col1">
+                <img src="img/me.png" class="rounded-circle smallPic" id="profilePic" alt="Picture of Eric Phillips">
             </div>
-        </div>
+         
+            <div class="col-12 col-md-6 px-5">
+                <div class="row row-cols-md-4 pt-2" id="col2">
+                    <div class="col-12 col-md-12">
+                        <p class="intro">HOWDY! MY NAME IS</p>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <h1 style="font-size: 40px; letter-spacing: 3px;">
+                            <span style="color: #9932cc;">Eric</span> Phillips
+                        </h1>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <p class="shortDescription">
+                            A <span style="color: #9932cc;">Front-End Web Developer</span> dedicated to 
+                            creating interactive applications and dynamic experiences on the world-wide web.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <div class="btn resumeBtn">
+                            Resum&eacute;
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+          
     </div>
 
     <!-- Bootstrap JS -->
