@@ -17,77 +17,80 @@
 </head>
 
 <body>
-    <div class="row row-cols-md-2 minHeight w-100">
+    <div class="row row-cols-md-2 minHeight">
         <!-- Side navigation -->
-        <nav class="navbar navbar-expand-md navbar-light w-100">
-            <a class="navbar-brand" href="#"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
-            aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+        <aside class="sideNav sideNavShow d-flex flex-column justify-content-center">
+            <nav class="navbar navbar-expand-md navbar-light">
+                <a class="navbar-brand" href="#"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
 
-            <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="#">
-                            <p>Home</p>
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">
-                            <p>Link</p>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-
-        <div class="col-12 col-md-6" id="col1">
-            <img src="img/m2blurry.png" class="rounded-circle smallPic" alt="Picture of Eric Phillips">
-        </div>
-        
-        <div class="col-12 col-md-6">
-            <div class="row row-cols-md-4 pt-2" id="col2">
-                <div class="col-12 col-md-12">
-                    <p class="intro">HOWDY! MY NAME IS</p>
-                </div>
-                <div class="col-12 col-md-12">
-                    <h1 style="font-size: 40px; letter-spacing: 3px; line-height: 4rem;">
-                        <span style="color: #9932cc;">Eric</span> Phillips
-                    </h1>
-                </div>
-                <div class="col-12 col-md-12">
-                    <p class="shortDescription">
-                        A <span style="color: #9932cc;">Front-End Web Developer</span> dedicated to 
-                        creating interactive applications and dynamic experiences on the world-wide web.
-                    </p>
-                </div>
-                <div class="col-12 col-md-12">
-                    <div class="btn resumeBtn">
-                        Resum&eacute;
-                    </div>
-                    <ul class="smList">
-                        <!--Icons are for personal use from cleanpng.com-->
-                        <li>
-                            <a href="" target="_blank" rel="noopener noreferrer">
-                                <img class="img-fluid" src="img/lnkdn-transparent.png" alt="LinkedIn">
+                <div class="collapse navbar-collapse" id="navbarCollapse">
+                    <ul class="navbar-nav">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">
+                                <p>Home</p>
                             </a>
                         </li>
-                        <li>
-                            <a href="" target="_blank" rel="noopener noreferrer">
-                                <img class="img-fluid" src="img/git-transparent.png" alt="GitHub">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" target="_blank" rel="noopener noreferrer">
-                                <img class="img-fluid" src="img/twtr-transparent.png" alt="Twitter">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <p>Link</p>
                             </a>
                         </li>
                     </ul>
                 </div>
+            </nav>
+        </aside>
+
+        <div class="container-fluid align-items-center">
+            <div class="col-12 col-md-6" id="col1">
+                <img src="img/m2blurry.png" class="rounded-circle smallPic" alt="Picture of Eric Phillips">
+            </div>
+            
+            <div class="col-12 col-md-6">
+                <div class="row row-cols-md-4" id="col2">
+                    <div class="col-12 col-md-12">
+                        <p class="intro">HOWDY! MY NAME IS</p>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <h1 class="myName">
+                            <span style="color: #9932cc;">Eric</span> Phillips
+                        </h1>
+                    </div>
+                    <div class="col-12 col-md-12">
+                        <p class="shortDescription">
+                            A <span style="color: #9932cc;">Front-End Web Developer</span> dedicated to 
+                            creating interactive applications and dynamic experiences on the world-wide web.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-12 linkList">
+                        <div class="btn resumeBtn">
+                            Resum&eacute;
+                        </div>
+                        <ul class="smList">
+                            <!--Icons are for personal use from cleanpng.com-->
+                            <li>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <img class="img-fluid" src="img/lnkdn-transparent.png" alt="LinkedIn">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <img class="img-fluid" src="img/git-transparent.png" alt="GitHub">
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" target="_blank" rel="noopener noreferrer">
+                                    <img class="img-fluid" src="img/twtr-transparent.png" alt="Twitter">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
-        
     </div>
 
     <!-- Bootstrap JS -->

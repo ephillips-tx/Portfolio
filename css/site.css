@@ -10,6 +10,31 @@ body {
     background-color: #f7f7f7
 }
 
+.container-fluid {
+    margin: 0;
+    width: calc(100% - 105px);
+    overflow: hidden;
+}
+
+body > div.row {
+    margin: 0;
+    max-width: 1140px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.sideNav {
+    width: 105px;
+    height: 100vh;
+    position: fixed;
+    left: 0
+}
+
+.navbar-nav {
+    display: inline-block
+}
+
 .navbar-toggler {
     border: 0;
     margin: 0px 20px
@@ -43,8 +68,10 @@ p.shortDescription {
     font-weight: 550
 }
 
-.navbar {
-    max-height: 75px
+h1.myName {
+    font-size: 40px; 
+    letter-spacing: 3px; 
+    line-height: 4rem;
 }
 
 .btn {
@@ -81,10 +108,18 @@ ul.smList > li > a > img {
 
 #col1, #col2 {
     text-align: center;
+}
+
+#col2 > div {
     padding: 0
 }
 
 @media only screen and (min-width: 768px) {
+    div.container-fluid {
+        display: flex;
+        justify-content: center;
+    }
+
     ul.smList {
         margin-left: .8rem
     }
@@ -97,6 +132,12 @@ ul.smList > li > a > img {
             box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
     }
 
+    h1.myName {
+        font-size: 33px; 
+        letter-spacing: 3px; 
+        line-height: 4rem;
+    }
+
     .shortDescription {
         font-size: 1.3rem;
         color: gray;
@@ -104,13 +145,12 @@ ul.smList > li > a > img {
     }
 
     #col1 {
-        text-align: right
+        text-align: right;
     }
 
     #col2 {
-        max-width: 500px;
         text-align: left;
-        margin-left: 50px
+        padding: 0 0 0 50px
     }
 }
 
