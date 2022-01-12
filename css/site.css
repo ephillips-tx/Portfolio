@@ -1,9 +1,24 @@
+html, .navbar {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    font-family: 'Arial'
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial';
+    background-color: #f7f7f7
+}
+
+.navbar-toggler {
+    border: 0;
+    margin: 0px 20px
 }
 
 .minHeight {
-    height: 90vh
+    margin: 0;
+    padding: 0;
+    height: 100vh;
 }
 
 .intro {
@@ -34,25 +49,49 @@ p.shortDescription {
 .btn {
     background-color: #9932cc;
     color: white;
-    padding: 15px 35px;
+    padding: 10px 30px;
     border-radius: 40px;
     letter-spacing: 2px;
     font-size: .9rem;
 }
 
-.resumeBtn:hover {
+ul.smList {
+    list-style-type: none;
+    display: inline-block;
+    padding: 0;
+    margin-left: 50px
+}
+
+ul.smList > li {
+    display: inline-block;
+}
+
+ul.smList > li > a > img {
+    width: 45px;
+    height: 45px;
+    padding: 5px;
+    border-radius: 6px;
+}
+
+.resumeBtn:hover,  ul.smList > li > a > img:hover {
     box-shadow: 0 14px 28px rgb(0 0 0 / 20%);
     transition: all 0.3s ease-in
 }
 
+#col1, #col2 {
+    text-align: center;
+    padding: 0
+}
 
-
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px) {
+    ul.smList {
+        margin-left: .8rem
+    }
     .smallPic {
         border-radius: 50%;
         margin: 0 auto;
-        width: 350px;
-        height: 350px;
+        width: 300px;
+        height: 300px;
         -webkit-box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
             box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
     }
@@ -64,10 +103,27 @@ p.shortDescription {
     }
 
     #col1 {
-        
+        text-align: right
     }
 
     #col2 {
-        max-width: 550px
+        max-width: 500px;
+        text-align: left;
+        margin-left: 50px
+    }
+}
+
+@media only screen and (min-width: 991px) {
+    .smallPic {
+        border-radius: 50%;
+        margin: 0 auto;
+        width: 350px;
+        height: 350px;
+        -webkit-box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+            box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+    }
+
+    ul.smList {
+        margin-left: 50px
     }
 }
