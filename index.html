@@ -18,14 +18,16 @@
 
 <body>
     <div class="row row-cols-md-2 minHeight">
+        <!-- Mobile navigation button -->
+        <div id="home" class="visuallyHidden"></div>
+        <button class="navbar-toggler navButton" id="navButton" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
         <!-- Side navigation -->
         <aside class="sideNav sideNavShow d-flex flex-column justify-content-center">
             <nav class="navbar navbar-expand-md navbar-light">
                 <a class="navbar-brand" href="#"></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" 
-                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
 
                 <div class="collapse navbar-collapse" id="navbarCollapse">
                     <ul class="navbar-nav">
@@ -50,43 +52,47 @@
             </div>
             
             <div class="col-12 col-md-6">
-                <div class="row row-cols-md-4" id="col2">
-                    <div class="col-12 col-md-12">
+                <div class="row" id="col2">
+                    <div class="col-12">
                         <p class="intro">HOWDY! MY NAME IS</p>
                     </div>
-                    <div class="col-12 col-md-12">
+                    <div class="col-12">
                         <h1 class="myName">
                             <span style="color: #9932cc;">Eric</span> Phillips
                         </h1>
                     </div>
-                    <div class="col-12 col-md-12">
+                    <div class="col-12">
                         <p class="shortDescription">
                             A <span style="color: #9932cc;">Front-End Web Developer</span> dedicated to 
                             creating interactive applications and dynamic experiences on the world-wide web.
                         </p>
                     </div>
-                    <div class="col-12 col-md-12 linkList">
-                        <div class="btn resumeBtn">
-                            Resum&eacute;
+                    <div class="row linkList">
+                        <div class="col-6">
+                            <div class="btn resumeBtn">
+                                Resum&eacute;
+                            </div>
                         </div>
-                        <ul class="smList">
-                            <!--Icons are for personal use from cleanpng.com-->
-                            <li>
-                                <a href="" target="_blank" rel="noopener noreferrer">
-                                    <img class="img-fluid" src="img/lnkdn-transparent.png" alt="LinkedIn">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank" rel="noopener noreferrer">
-                                    <img class="img-fluid" src="img/git-transparent.png" alt="GitHub">
-                                </a>
-                            </li>
-                            <li>
-                                <a href="" target="_blank" rel="noopener noreferrer">
-                                    <img class="img-fluid" src="img/twtr-transparent.png" alt="Twitter">
-                                </a>
-                            </li>
-                        </ul>
+                        <div class="col-6">
+                            <ul class="smList">
+                                <!--Icons are for personal use from cleanpng.com-->
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                        <img class="img-fluid" src="img/lnkdn-transparent.png" alt="LinkedIn">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                        <img class="img-fluid" src="img/git-transparent.png" alt="GitHub">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="" target="_blank" rel="noopener noreferrer">
+                                        <img class="img-fluid" src="img/twtr-transparent.png" alt="Twitter">
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>

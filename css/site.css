@@ -14,6 +14,7 @@ body {
     margin: 0;
     width: calc(100% - 105px);
     overflow: hidden;
+    padding-top: 60px
 }
 
 body > div.row {
@@ -50,7 +51,7 @@ body > div.row {
     font-weight: 2;
     font-size: 1.1rem;
     letter-spacing: 2px;
-    margin-top: 10px
+    margin-top: 30px
 }
 
 .smallPic {
@@ -74,6 +75,29 @@ h1.myName {
     line-height: 4rem;
 }
 
+.navButton {
+    cursor: pointer;
+    position: fixed;
+    height: 30px;
+    width: 35px;
+    padding: 10px;
+    top: 35px;
+    right: 25px;
+    z-index: 20;
+}
+
+.visuallyHidden {
+    position: absolute;
+    width: 1px; 
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    overflow: hidden
+}
+
 .btn {
     background-color: #9932cc;
     color: white;
@@ -87,7 +111,6 @@ ul.smList {
     list-style-type: none;
     display: inline-block;
     padding: 0;
-    margin-left: 50px
 }
 
 ul.smList > li {
@@ -120,9 +143,6 @@ ul.smList > li > a > img {
         justify-content: center;
     }
 
-    ul.smList {
-        margin-left: .8rem
-    }
     .smallPic {
         border-radius: 50%;
         margin: 0 auto;
@@ -144,13 +164,13 @@ ul.smList > li > a > img {
         font-weight: 5
     }
 
-    #col1 {
-        text-align: right;
-    }
-
     #col2 {
         text-align: left;
         padding: 0 0 0 50px
+    }
+
+    .intro {
+        margin-top: 10px;
     }
 }
 
@@ -166,5 +186,8 @@ ul.smList > li > a > img {
 
     ul.smList {
         margin-left: 50px
+    }
+    .navButton {
+        display: block;
     }
 }
