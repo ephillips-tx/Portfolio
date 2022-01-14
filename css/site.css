@@ -1,4 +1,4 @@
-html, body, .navbar, .sideNav {
+html, body, .navbar, .sideNav, .container-fluid {
     margin: 0;
     padding: 0
 }
@@ -9,14 +9,12 @@ body {
 }
 
 .container-fluid {
-    margin: 0;
     width: calc(100% - 90px);
     overflow: hidden;
     padding-top: 60px
 }
 
 body > div.row {
-    margin: 0;
     max-width: 1140px;
     margin: 0 auto;
     display: flex;
@@ -43,9 +41,9 @@ body > div.row {
     text-align: center;
 }
 
-.sideNav nav {
-    padding: 26px;
+.navbar {
     font-size: 80%;
+    justify-content: center
 }
 
 .navbar-toggler {
@@ -64,7 +62,7 @@ body > div.row {
 .navButton {
     cursor: pointer;
     position: fixed;
-    height: 30px;
+    height: 35px;
     width: 35px;
     top: 35px;
     right: 25px;
@@ -132,15 +130,6 @@ h1.myName {
     text-align: left;
 }
 
-.btn {
-    background-color: #9932cc;
-    color: white;
-    padding: 10px 30px;
-    border-radius: 40px;
-    letter-spacing: 2px;
-    font-size: .9rem;
-}
-
 ul.smList {
     list-style-type: none;
     display: inline-block;
@@ -166,6 +155,15 @@ ul.smList > li > a > img {
     padding: 0
 }
 
+.btn {
+    background-color: #9932cc;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 40px;
+    letter-spacing: 2px;
+    font-size: .9rem;
+}
+
 /* HOVER EFFECTS */
 .resumeBtn:hover, .nav-item:hover, ul.smList > li > a > img:hover {
     box-shadow: 0 14px 28px rgb(0 0 0 / 20%);
@@ -178,7 +176,7 @@ ul.smList > li > a > img {
 
 @media (max-width: 990px){
     .sideNav {
-        width: 220px
+        width: 205px
     }
 }
 
@@ -199,46 +197,39 @@ ul.smList > li > a > img {
     }
 
     .sideNav {
-        width: 100px
+        width: 105px
     }
 
     .navLinkName {
         display: none;
     }
-    
-    .navLinkName:hover {
-        display: block;
+
+    .sideNav:hover .navLinkName {
+        display: inline-block;
+        
+    }
+
+    .sideNav:hover {
+        width: 220px;
+        transition: width .1s
     }
 
     h1.myName {
-        font-size: 33px; 
+        font-size: 50px; 
         letter-spacing: 3px; 
         line-height: 4rem;
     }
 
     .shortDescription {
         font-size: 1.3rem;
-        color: gray;
-        font-weight: 5
+        color: gray
     }
 
     #col2 {
         text-align: left;
-        padding: 0 0 0 50px
-    }
-
-    .intro {
-        margin-top: 10px;
-    }
-
-    .linkList {
-        text-align: center;
     }
 
     ul.smList {
-        margin-left: 50px
-    }
-    .navButton {
-        display: block;
+        margin-left: 50px;
     }
 }
