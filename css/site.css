@@ -1,18 +1,16 @@
-html, .navbar {
+html, body, .navbar, .sideNav {
     margin: 0;
-    padding: 0;
+    padding: 0
 }
 
 body {
-    margin: 0;
-    padding: 0;
     font-family: 'Arial';
     background-color: #f7f7f7
 }
 
 .container-fluid {
     margin: 0;
-    width: calc(100% - 105px);
+    width: calc(100% - 90px);
     overflow: hidden;
     padding-top: 60px
 }
@@ -26,19 +24,70 @@ body > div.row {
 }
 
 .sideNav {
-    width: 105px;
     height: 100vh;
     position: fixed;
-    left: 0
+    left: -300px;
+    background-color: #9932cc;
+    transition: all .4s ease-in;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    color: #f3f3f3
 }
 
-.navbar-nav {
-    display: inline-block
+.sideNav > p {
+    background-color: #66cc33;
+    padding: 30px 15px;
+    font-size: 250%;
+    font-family: 'Montez', sans-serif;
+    text-align: center;
+}
+
+.sideNav nav {
+    padding: 26px;
+    font-size: 80%;
 }
 
 .navbar-toggler {
     border: 0;
-    margin: 0px 20px
+    margin: 0px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+/* Remove border/outline on focus state */
+.navbar-toggler:focus {
+    box-shadow: 0 0 5px;
+    color: #66cc33
+}
+
+.navButton {
+    cursor: pointer;
+    position: fixed;
+    height: 30px;
+    width: 35px;
+    top: 35px;
+    right: 25px;
+    z-index: 20;
+}
+
+a.nav-link {
+    color: #f3f3f3;
+}
+
+.navLinkName {
+    vertical-align: super;
+}
+
+.nav-item {
+    border-radius: 6px;
+    margin-bottom: 10px
+}
+
+.nav-item:hover {
+    background-color: #66cc33;
+    text-decoration: none;
+    color: #f3f3f3;
 }
 
 .minHeight {
@@ -50,8 +99,7 @@ body > div.row {
 .intro {
     font-weight: 2;
     font-size: 1.1rem;
-    letter-spacing: 2px;
-    margin-top: 30px
+    letter-spacing: 1px;
 }
 
 .smallPic {
@@ -59,43 +107,29 @@ body > div.row {
     margin: 0 auto;
     width: 250px;
     height: 250px;
-    -webkit-box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
-        box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+    -webkit-box-shadow: 12px 0 #b4e59a, 24px 0 #c9edb7, 36px 0 #def4d4;
+        box-shadow: 12px 0 #b4e59a, 24px 0 #c9edb7, 36px 0 #def4d4;
 }
 
 p.shortDescription {
-    font-size: 1rem;
-    color: gray;
-    font-weight: 550
+    color: #333;
+    font-family: 'Montserrat', Monospace
 }
 
 h1.myName {
     font-size: 40px; 
     letter-spacing: 3px; 
     line-height: 4rem;
+    font-family: 'Montez', sans-serif
 }
 
-.navButton {
-    cursor: pointer;
-    position: fixed;
-    height: 30px;
-    width: 35px;
-    padding: 10px;
-    top: 35px;
-    right: 25px;
-    z-index: 20;
+/* First column in class linkList */
+.linkList > div:first-of-type {
+    text-align: right;
 }
-
-.visuallyHidden {
-    position: absolute;
-    width: 1px; 
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
-    white-space: nowrap;
-    clip-path: inset(100%);
-    overflow: hidden
+/* Second column in class linkList */
+.linkList > div:nth-child(2){
+    text-align: left;
 }
 
 .btn {
@@ -124,11 +158,6 @@ ul.smList > li > a > img {
     border-radius: 6px;
 }
 
-.resumeBtn:hover,  ul.smList > li > a > img:hover {
-    box-shadow: 0 14px 28px rgb(0 0 0 / 20%);
-    transition: all 0.3s ease-in
-}
-
 #col1, #col2 {
     text-align: center;
 }
@@ -137,19 +166,48 @@ ul.smList > li > a > img {
     padding: 0
 }
 
-@media only screen and (min-width: 768px) {
-    div.container-fluid {
-        display: flex;
-        justify-content: center;
-    }
+/* HOVER EFFECTS */
+.resumeBtn:hover, .nav-item:hover, ul.smList > li > a > img:hover {
+    box-shadow: 0 14px 28px rgb(0 0 0 / 20%);
+    transition: all 0.3s ease-in
+}
 
+/*
+    BIGGER SCREENS
+*/
+
+@media (max-width: 990px){
+    .sideNav {
+        width: 220px
+    }
+}
+
+@media only screen and (min-width: 991px) {
     .smallPic {
         border-radius: 50%;
         margin: 0 auto;
-        width: 300px;
-        height: 300px;
+        width: 350px;
+        height: 350px;
         -webkit-box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
             box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+    }
+
+    div.container-fluid {
+        display: flex;
+        justify-content: center;
+        width: calc(100%-105px)
+    }
+
+    .sideNav {
+        width: 100px
+    }
+
+    .navLinkName {
+        display: none;
+    }
+    
+    .navLinkName:hover {
+        display: block;
     }
 
     h1.myName {
@@ -172,16 +230,9 @@ ul.smList > li > a > img {
     .intro {
         margin-top: 10px;
     }
-}
 
-@media only screen and (min-width: 991px) {
-    .smallPic {
-        border-radius: 50%;
-        margin: 0 auto;
-        width: 350px;
-        height: 350px;
-        -webkit-box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
-            box-shadow: 12px 0 #d9c8f1, 24px 0 #e2d6f3, 36px 0 #ece6f5;
+    .linkList {
+        text-align: center;
     }
 
     ul.smList {
