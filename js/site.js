@@ -11,3 +11,7 @@ function sideNavToggle() {
         console.log(val);
     }
 }
+
+//if viewport is mobile
+//change inner html of #arrow to swipe_down
+// this should change the google material icon shown
