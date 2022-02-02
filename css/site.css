@@ -35,7 +35,8 @@ body > div.row {
     text-align: left;
     display: flex;
     flex-direction: column;
-    color: #f3f3f3
+    color: #f3f3f3;
+    z-index: 20
 }
 
 .sideNav > p {
@@ -119,6 +120,10 @@ h1.myName {
     font-family: 'Montez', sans-serif
 }
 
+.pCard {
+    font-size: 85%;
+}
+
 /* First column in class linkList */
 .linkList > div:first-of-type {
     text-align: right;
@@ -181,8 +186,16 @@ ul.smList > li > a > img {
 @media only screen and (min-width: 991px) {
     body > div.row, .container-fluid {
         margin: 0 auto;
-        width: 100%
+        width: 100%;
     }
+    .pCard {
+        font-size: 100%
+    }
+
+    .pCardLink {
+        font-size: 100%
+    }
+
     .smallPic {
         border-radius: 50%;
         margin: 0 auto;
