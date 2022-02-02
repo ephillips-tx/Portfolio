@@ -168,9 +168,13 @@ ul.smList > li > a > img {
 }
 
 /* HOVER EFFECTS */
-.resumeBtn:hover, .nav-item:hover, ul.smList > li > a > img:hover {
+.resumeBtn:hover, .nav-item:hover, ul.smList > li > a > img:hover, .card-footer>a:hover {
     box-shadow: 0 14px 28px rgb(0 0 0 / 20%);
     transition: all 0.3s ease-in
+}
+
+.card-footer>a:hover {
+    background-color: #66cc33;
 }
 
 /*
