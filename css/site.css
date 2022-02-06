@@ -1,23 +1,15 @@
-html, body, .navbar, .sideNav, .container-fluid {
+html, body, .navbar, .sideNav {
     margin: 0;
     padding: 0
 }
 
 body {
     font-family: 'Arial';
-    background-color: #dedede; /*#f7f7f7 is more white*/
+    background-color: #e6e6e6; /*#f7f7f7 is more white*/
 }
 
-.container-fluid {
-    width: calc(100% - 90px);
-    padding-top: 60px
-}
-
-body > div.row {
-    max-width: 1140px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: center;
+.row {
+    width: 100%
 }
 
 .minHeight {
@@ -122,25 +114,7 @@ h1.myName {
 
 .pCard {
     font-size: 85%;
-}
-
-/* First column in class linkList */
-.linkList > div:first-of-type {
-    text-align: right;
-}
-/* Second column in class linkList */
-.linkList > div:nth-child(2){
-    text-align: left;
-}
-
-ul.smList {
-    list-style-type: none;
-    display: inline-block;
-    padding: 0;
-}
-
-ul.smList > li {
-    display: inline-block;
+    height: 100%;
 }
 
 ul.smList > li > a > img {
@@ -148,14 +122,6 @@ ul.smList > li > a > img {
     height: 45px;
     padding: 5px;
     border-radius: 6px;
-}
-
-#col1, #col2 {
-    text-align: center;
-}
-
-#col2 > div {
-    padding: 0
 }
 
 .btn {
@@ -188,10 +154,6 @@ ul.smList > li > a > img {
 }
 
 @media only screen and (min-width: 991px) {
-    body > div.row, .container-fluid {
-        margin: 0 auto;
-        width: 100%;
-    }
     .pCard {
         font-size: 100%
     }
@@ -207,12 +169,6 @@ ul.smList > li > a > img {
         height: 350px;
         -webkit-box-shadow: 12px 0 #b4e59a, 24px 0 #c9edb7, 36px 0 #def4d4;
             box-shadow: 12px 0 #b4e59a, 24px 0 #c9edb7, 36px 0 #def4d4;
-    }
-
-    header.container-fluid {
-        display: flex;
-        justify-content: center;
-        width: calc(100%-105px)
     }
 
     .sideNav {
@@ -241,20 +197,5 @@ ul.smList > li > a > img {
     .shortDescription {
         font-size: 1.3rem;
         color: gray
-    }
-
-    #col2 {
-        text-align: left;
-    }
-
-    /* First column in class linkList */
-    .linkList > div:first-of-type {
-        text-align: left;
-        padding-left: 20px;
-
-    }
-
-    .smList > li {
-        padding: 0 10px;
     }
 }

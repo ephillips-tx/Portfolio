@@ -1,3 +1,7 @@
+if (window.matchMedia('(min-width: 991px)').matches) {
+	sideNavToggle();
+}
+
 function sideNavToggle() {
     var sideNav = document.getElementById('sideNav');
     var val = sideNav.style.left;
